@@ -7,7 +7,7 @@ function SignupViews() {
         <div className="w-screen h-screen bg-[#FCFCFC] flex justify-center items-center">
             <div className='bg-white flex flex-col justify-center items-center rounded-2xl w-[28.94rem] h-[42.5625rem]'>
                 <p className="flex justify-center items-center font-['Bungee'] text-[3rem] text-[#95C4F5] m-0">NODE</p>
-                <form className='flex flex-col items-center pt-10 gap-5 w-full'>
+                <form className='flex flex-col items-center pt-[1rem] gap-5 w-full'>
                     <input type='text' placeholder='이름' className='border border-[#D9D9D9] text-base font-normal rounded-xl w-5/6 h-12 px-3 text-[#1B5087] placeholder-[#D9D9D9]'></input>
                     <div className="flex gap-[1.2rem] items-center">
                         <select className="border border-[#D9D9D9] text-base font-normal rounded-xl w-[11.5rem] h-[3rem] px-3 text-[#D9D9D9]">
