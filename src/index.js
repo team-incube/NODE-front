@@ -2,15 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import './App.css';
-import { BrowserRouter } from 'react-router-dom';
-import SigninPage from './app/signin/page';
-
+import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <SigninPage />
-    </BrowserRouter>
+      <App />
   </React.StrictMode>
 );
 
