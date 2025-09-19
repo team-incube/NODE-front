@@ -1,17 +1,17 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import SigninPage from "./app/signin/page";
-import SignupPage from "./app/signup/page";
-import MainPage from "./app/main/page";
+import SigninViews from "./page/signin";
+import SignupViews from "./page/signup";
+import MainViews from "./page/main";
 import './App.css';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<SigninPage />} />
-        <Route path="/signin" element={<SigninPage />} />
-        <Route path="/signup" element={<SignupPage />} />
-        <Route path="/main" element={<MainPage />} />
+        <Route path="/" element={<SigninViews />} />
+        <Route path="/signin" element={<SigninViews />} />
+        <Route path="/signup" element={<SignupViews />} />
+        <Route path="/main" element={<MainViews />} />
       </Routes>
     </BrowserRouter>
   );
