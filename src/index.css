@@ -2,3 +2,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "TmoneyRoundWind";
+    src: url("./assets/fonts/TmoneyRoundWind/02_ttf/TmoneyRoundWindRegular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TmoneyRoundWind";
+    src: url("./assets/fonts/TmoneyRoundWind/02_ttf/TmoneyRoundWindExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
