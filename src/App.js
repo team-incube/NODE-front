@@ -1,14 +1,10 @@
-import { Routes, Route } from "react-router-dom";
-import Step1 from "./pages/signup/step1";
-import Step3 from "./pages/signup/step3";
-import Step4 from "./pages/signup/step4";
+import {Routes, Route} from "react-router-dom"; 
+import Inquiry from "./pages/inquiry/index.jsx";
 
 function App() {
     return (
         <Routes>
-            <Route path="step1" element={<Step1 />} />
-            <Route path="step3" element={<Step3 />} />
-            <Route path="step4" element={<Step4 />} />
+            <Route path="/" element={<Inquiry />} />
         </Routes>
     )
 }
