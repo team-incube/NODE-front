@@ -4,6 +4,7 @@ import { GRADES, CLASSES } from "../../constants/options";
 import DropdownArrow from "../../assets/icons/dropdownArrow";
 
 function Step2() {
+  const [gender, setGender] = useState("");
   const [gradeOpen, setGradeOpen] = useState(false);
   const [classOpen, setClassOpen] = useState(false);
   const [gradeValue, setGradeValue] = useState("");
@@ -90,6 +91,30 @@ function Step2() {
                 </div>
               )}
             </div>
+          </div>
+          <div className="flex gap-[0.9375rem]">
+            <button
+              type="button"
+              onClick={() => setGender("male")}
+              className={`flex justify-center items-center w-[145px] h-[36px] border rounded-[8px] text-sm font-tmoney font-normal  ${
+                gender === "male"
+                  ? "bg-[#95C4F5] text-white border-none font-semibold"
+                  : "bg-white text-[#D9D9D9] border-[#D9D9D9]"
+              }`}
+            >
+              남자
+            </button>
+            <button
+              type="button"
+              onClick={() => setGender("female")}
+              className={`flex justify-center items-center w-[145px] h-[36px] border rounded-[8px] text-sm font-tmoney font-normal   ${
+                gender === "female"
+                  ? "bg-[#95C4F5] text-white border-none font-semibold"
+                  : "bg-white text-[#D9D9D9] border-[#D9D9D9]"
+              }`}
+            >
+              여자
+            </button>
           </div>
         </form>
       </div>
