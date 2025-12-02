@@ -1,4 +1,4 @@
-import yeunImage from "../assets/icons/yeun.png.png";
+import yeunImage from "../assets/icons/yeun.png";
 import user from "../assets/icons/user.svg";
 import boy from "../assets/icons/boy.svg";
 
@@ -12,11 +12,11 @@ export default function ProfileBoxMentor(){
                 <div className="flex gap-[45px] h-[120px]">
                     <img src={yeunImage} alt="프로필"
                         className="w-[120px] h-[120px] border border-[1px] border-[#60ABFA] rounded-full p-[10px] bg-white"
-                    />
+                    /> {/* 이미지 선택/크기 조정 */}
                     <div className="flex flex-col w-[112px] h-[120px] font-tmoney gap-[10px] text-[16px] m-[0px] p-[0px]">
                         <span className="text-[#60ABFA] text-[12px] gap-[6px] flex border border-[1px] border-[#60ABFA] rounded-[5px] w-[60px] h-[24px] justify-center items-center">
                             <img src={user} alt="user icon"/>
-                            멘토
+                            멘토 
                         </span>
                         <span className="h-[22px] flex items-center w-[73px] h-[22px] gap-[5px]">
                             김수빈 {/* 사용자 이름 */}

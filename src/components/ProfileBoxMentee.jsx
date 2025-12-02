@@ -1,4 +1,4 @@
-import jiyuImage from "../assets/icons/jiyu.png.png";
+import jiyuImage from "../assets/icons/jiyu.png";
 import user from "../assets/icons/user.svg";
 import girl from "../assets/icons/girl.svg";
 
@@ -13,7 +13,7 @@ export default function ProfileBoxMentee(){
                 <div className="flex gap-[45px] h-[120px]">
                     <img src={jiyuImage} alt="프로필"
                         className="w-[120px] h-[120px] border border-[1px] border-[#60ABFA] rounded-full p-[10px]"
-                    /> {/* 이미지 선택 -살짝 문제 이미지 크기를 어찌한다냐*/}
+                    /> {/* 이미지 선택/크기 조정 */}
                     <div className="flex flex-col w-[100px] h-[120px] font-tmoney gap-[10px] text-[16px] m-[0px] p-[0px]">
                         <span className="text-[#60ABFA] text-[12px] gap-[6px] flex border border-[1px] border-[#60ABFA] rounded-[5px] w-[60px] h-[24px] justify-center items-center">
                             <img src={user} alt="user icon"/>
