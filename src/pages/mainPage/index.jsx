@@ -1,31 +1,34 @@
-import ProfileBoxMentee from "../../components/ProfileBoxMentee.jsx";
-import ProfileBoxMentor from "../../components/ProfileBoxMentor.jsx";
 import NavBar from "../../components/NavBar.jsx";
-
-function AssignmentList(){
-    return(
-        <div className="w-[1178px] h-[90px] border-t border-b border-[#D9EAFD]">
-            <div className="flex">
-                <span>CRUD 게시판 만들기</span> {/* 과제 제목 출력 */}
-                <div>
-                    <span>D-16</span> {/* 날짜에 따라 다르게 출력 */}
-                    <span>미제출</span>
-                </div>
-            </div>
-        </div>
-    )
-}
+import MyProfileBox from "../../components/MyProfileBox.jsx";
+import UserProfileBox from "../../components/UserProfileBox.jsx";
+import AssignmentList from "../../components/AssignmentList.jsx";
+import check from "../../assets/icons/check.svg";
 
 export default function MainPage(){
     return(
         <div>
             <NavBar/>
-            {/* <div className="flex justify-center gap-[30px] mt-[79px]">
-                <ProfileBoxMentee/>
-                <ProfileBoxMentor/>
-            </div> */}
-            <div>
-                <AssignmentList/>
+            <div className="flex justify-center gap-[30px] mt-[79px]">
+                <MyProfileBox/>
+                <UserProfileBox/>
+            </div>
+            <div className="flex justify-center">
+                <div className="mt-[70px] mb-[54px] h-[496px] w-[1178px] border-b-[3px] border-[#D9EAFD]">
+                    <div className="border-b-[3px] border-[#D9EAFD] w-[1178px] h-[62px] flex justify-between items-center">
+                        <span className="text-[#60ABFA] text-[24px] font-tmoney">과제 현황</span>
+                        <button className="text-[#979797] text-[16px] font-tmoney">과제리스트로 이동하기</button>
+                    </div>
+                    <div className="gap-[10px] flex flex-col py-[22px]">
+                        <AssignmentList/>
+                        <AssignmentList/>
+                        <AssignmentList/>
+                        <AssignmentList/>
+                    </div> {/* 과제리스트 */}
+                    {/* <div className="w-[1178px] h-[426px] flex flex-col justify-center items-center gap-[30px]">
+                        <img src={check} alt="check icon"/>
+                        <span className="font-tmoney text-[16px] text-black/60">과제를 모두 끝냈어요!</span>
+                    </div> 과제 완료 */}
+                </div>
             </div>
         </div>
     )
